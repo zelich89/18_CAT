@@ -16,6 +16,54 @@ a {
   text-decoration: none;
 }
 
+.image-pos-mobile {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: .3;
+  z-index: 11;
+  pointer-events: none;
+  top: 13px;
+  display: none;
+  @if $maket-visible == 1 {
+    display: block;
+    @media (min-width: $mobile) {
+      display: none;
+    }
+  }
+}
+.image-pos-tablet {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: .3;
+  z-index: 11;
+  pointer-events: none;
+  display: none;
+  @if $maket-visible == 1 {
+    @media (min-width: $mobile) {
+      display: block;
+    }
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
+}
+.image-pos-desktop {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: .3;
+  z-index: 11;
+  pointer-events: none;
+  display: none;
+  @if $maket-visible == 1 {
+    @media (min-width: $desktop) {
+      display: block;
+    }
+  }
+}
+
 .visible-only-mobile {
   @media (min-width: $mobile) {
     display: none;

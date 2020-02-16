@@ -1,11 +1,25 @@
-// @import "site/variables";
-// @import "site/body";
-// @import "site/content";
-// @import "site/mixins";
-//  @import "site/style";
+ @import "site/variables";
+ @import "site/body";
+ @import "site/content";
+ @import "site/mixins";
+  @import "site/part";
+  @import "site/breakpoint";
+  @import "site/_types";
 
-// @import "site/top-nav";
-// @import "site/logo";
+  @import "site/top-nav";
+  @import "site/main-sect";
+
+  @import "site/choose";
+  @import "site/how";
+  @import "site/example";
+  @import "site/map";
+
+  @import "site/btn";
+ @import "site/socia";
+
+
+
+  @import "site/footer";
+
 // @import "site/nav-icons";
-// @import "site/breakpoint";
 

@@ -1,0 +1,64 @@
+.example {
+  &__block {
+    @media (min-width: $desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__content {
+    @media (min-width: $desktop) {
+      width: 40%;
+    }
+  }
+  &__title {
+    &--ident {
+      padding-bottom: 35px;
+      @media (min-width: $mobile) {
+        padding-bottom: 55px;
+      }
+      @media (min-width: $desktop) {
+        padding-bottom: 140px;
+      }
+    }
+  }
+  &__text {
+    &--ident {
+      padding-bottom: 25px;
+      @media (min-width: $mobile) {
+        padding-bottom: 55px;
+      }
+      @media (min-width: $desktop) {
+        padding-bottom: 70px;
+      }
+    }
+  }
+  &__payed {
+    text-transform: uppercase;
+    &--ident {
+      padding-bottom: 40px;
+    }
+  }
+  &__pic {
+    pointer-events: none;
+    position: relative;
+  }
+  &__slider {
+
+    position: absolute;
+    right: 30%;
+    left: 30%;
+    height: 6px;
+    background-color: $dop-color;
+    border-radius: 3px;
+  }
+  &--ident {
+    padding-bottom: 20px;
+    @media (min-width: $mobile) {
+      padding-bottom: 50px;
+      padding-left: 90px;
+    }
+    @media (min-width: $desktop) {
+      padding-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.how {
+
+  &__title {
+    &--ident {
+      padding-bottom: 40px;
+    }
+  }
+  &__items {
+    @media(min-width: $mobile) {
+      display: flex;
+      flex-wrap: wrap-reverse;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    @media(min-width: $mobile) {
+      display: block;
+      width: 50%;
+    }
+    @media(min-width: $desktop) {
+      width: 25%;
+    }
+    &--ident {
+      margin-bottom: 20px;
+      @media(min-width: $mobile) {
+        padding-right: 125px;
+      }
+      @media(min-width: $desktop) {
+        padding-right: 50px;
+      }
+    }
+  }
+  &__trafaret {
+    @include square-size(60px);
+    background-color: $primary;
+    flex-shrink: 0;
+    position: relative;
+    &--ident {
+      @media(min-width: $mobile) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    .svg {
+      @include square-size(30px);
+    }
+  }
+  &__text {
+    position: relative;
+    z-index: 1;
+    &--ident {
+      padding-left: 15px;
+      @media(min-width: $mobile) {
+        padding-left: 0;
+        padding-bottom: 45px;
+      }
+    }
+  }
+  &__count {
+    display: none;
+    @media(min-width: $mobile) {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      pointer-events: none;
+      color: $secondary;
+      @include font(normal, 180px, 1);
+      text-align: center;
+      z-index: 0 ;
+      //margin-right: 90px;
+    }
+    /*@media(min-width: $desktop) {
+      margin-right: 15px;
+    }*/
+  }
+}

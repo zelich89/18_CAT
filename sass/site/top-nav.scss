@@ -1,0 +1,95 @@
+.top-nav {
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: $mobile) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @media (min-width: $desktop) {
+    }
+  }
+  &__logo {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    @media (min-width: $tablet) {
+      justify-content: normal;
+    }
+    &-mobile {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 25px;
+      @media (min-width: $tablet) {
+        display: none;
+      }
+      &-text {
+        margin: 25px 0;
+        @media (min-width: $tablet) {
+          margin: 0;
+          display: none;
+        }
+      }
+    }
+    &-tablet {
+      display: none;
+      @media (min-width: $tablet) {
+        display: block;
+      }
+      @media (min-width: $desktop) {
+        display: none;
+      }
+    }
+    &-desktop {
+      display: none;
+      @media (min-width: $desktop) {
+        display: inline-block;
+      }
+    }
+  }
+  &__links {
+    text-align: center;
+    @media (min-width: $mobile) {
+      display: flex;
+    }
+    @media (min-width: $desktop) {
+      background-color: $primary;
+    }
+  }
+  &__item {
+    color: $black;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    @extend .h5;
+    display: block;
+    margin: 25px 0;
+    @media (min-width: $mobile) {
+      margin: 0 18px;
+      padding: 5px 0;
+      transition: opacity $transition-time ease, border $transition-time ease;
+      &:hover {
+        color: rgba($black,.6)
+      }
+      &:focus {
+        border-bottom: 2px solid $primary;
+      }
+      &:active {
+        color: rgba($black,.3);
+      }
+    }
+    @media (min-width: $desktop) {
+      color: $white;
+      &:focus {
+        border-bottom: 2px solid $white;
+      }
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

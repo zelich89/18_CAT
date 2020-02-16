@@ -1,0 +1,79 @@
+.footer {
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: $mobile) {
+      flex-direction: row;
+      justify-content: space-between;
+      //padding: 0 30px;
+    }
+    @media (min-width: $desktop) {
+    }
+    &--ident {
+      padding: 0 20px;
+      @media (min-width: $mobile) {
+        padding: 0 30px;
+      }
+      @media (min-width: $desktop) {
+        padding: 0 110px;
+      }
+    }
+  }
+  &__item {
+    display: flex;
+    padding: 30px 0;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+    &:not(:first-child):not(:last-child) {
+      border-top: 1px solid $diz;
+      border-bottom: 1px solid $diz;
+    }
+    @media (min-width: $mobile) {
+      border-top: none !important;
+      border-bottom: none !important;
+      padding: 0;
+    }
+
+  }
+  &__made-by {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    width: 100%;
+    @media (min-width: $mobile) {
+      width: auto;
+    }
+
+    .icon {
+      svg {
+        @include square-size(30px);
+      }
+    }
+  }
+  &-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  &--padding {
+    padding: 35px 0;
+  }
+  &--bg-grey {
+    background-color: $secondary;
+  }
+  &--back {
+    margin: 0 -20px;
+    @media (min-width: $mobile) {
+      margin: 0 -30px;
+    }
+    @media (min-width: $desktop) {
+      margin: 0 -110px;
+    }
+  }
+}

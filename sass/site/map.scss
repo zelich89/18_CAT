@@ -1,0 +1,33 @@
+.map {
+  height: 400px;
+  &__block {
+    display: flex;
+  }
+  &__title {
+    width: 50%;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  &__address {
+    width: 50%;
+  }
+  &__inner {
+    margin: 0 -30px;
+  }
+}
+
+
+
+
+
+
+.form {
+  &__container {
+    &--size-small {
+      border-radius: 5px;
+    }
+    &--size-big {
+      border-radius: 25px;
+    }
+  }
+}

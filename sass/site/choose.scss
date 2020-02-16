@@ -1,0 +1,123 @@
+.choose {
+  &__block {
+    @media (min-width: $desktop) {
+      display: flex;
+    }
+  }
+  &__element {
+    background-color: $secondary;
+    padding: 20px;
+    @media (min-width: $mobile) {
+      padding: 80px 60px;
+    }
+    @media (min-width: $tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
+    @media (min-width: $desktop) {
+      display: block;
+      width: 50%;
+    }
+    &--indent {
+      margin-bottom: 20px;
+      &:not(:first-child) {
+        @media (min-width: $desktop) {
+          margin-left: 40px;
+        }
+      }
+      &:not(:last-child) {
+        @media (min-width: $desktop) {
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+  &__content {
+    @media (min-width: $mobile) {
+      width: 60%;
+    }
+    @media (min-width: $desktop) {
+      width: auto;
+    }
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    &--indent {
+      padding-bottom: 20px;
+    }
+  }
+  &__icon {
+    border-radius: 50%;
+    background-color: $primary;
+    flex-shrink: 0;
+    &--small {
+      width: 50px;
+      height: 50px;
+      .svg {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    &--invis-tab {
+      @media (min-width: $mobile) {
+        display: none;
+      }
+      @media (min-width: $desktop) {
+        display: block;
+      }
+    }
+    &--big {
+      width: 200px;
+      height: 200px;
+      .svg {
+        width: 200px;
+        height: 200px;
+      }
+    }
+    &--vis-in-tab {
+      display: none;
+      @media (min-width: $mobile) {
+        display: block;
+      }
+      @media (min-width: $desktop) {
+        display: none;
+      }
+    }
+  }
+  &__label {
+    text-transform: uppercase;
+    &--indent {
+      padding-left: 20px;
+    }
+  }
+  &__text {
+    &--indent {
+      padding-bottom: 20px;
+    }
+    &--border {
+      border-bottom: 1px solid $diz;
+      @media (min-width: $mobile) {
+        border-bottom: none;
+      }
+    }
+  }
+  &__press {
+    display: flex;
+    align-items: center;
+    &--indent {
+      margin-top: 20px;
+    }
+  }
+  &__link {
+    text-transform: uppercase;
+    color: $black;
+  }
+  &__pointer {
+    color: $black;
+    .svg {
+      width: 48px;
+      height: 24px;
+    }
+  }
+}

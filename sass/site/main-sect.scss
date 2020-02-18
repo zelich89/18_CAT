@@ -73,7 +73,7 @@
     &--desktop {
       display: none;
       @media (min-width: $desktop) {
-        //display: block;
+        display: block;
       }
     }
   }

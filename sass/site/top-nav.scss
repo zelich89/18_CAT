@@ -18,6 +18,13 @@
     @media (min-width: $tablet) {
       justify-content: normal;
     }
+    transition: opacity $transition-time ease;
+    &:hover {
+      opacity: .8;
+    }
+    &:active {
+      opacity: .6;
+    }
     &-mobile {
       position: absolute;
       top: 50%;

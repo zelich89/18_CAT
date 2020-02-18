@@ -101,7 +101,7 @@
   }
   &__warp {
     @media (min-width: $mobile) {
-      background-color: lightblue;
+      //background-color: lightblue;
     }
     &--indent {
       @media (min-width: $mobile) {
@@ -117,11 +117,7 @@
     }
   }
   &__dop-block {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
+
     &--indent {
       margin-bottom: 0;
       @media (min-width: $mobile) {
@@ -129,6 +125,7 @@
       }
     }
   }
+
   &__slider {
     margin: 0 15px;
     position: relative;
@@ -194,6 +191,7 @@
       pointer-events: none;
     }
   }
+
   &--indent {
     padding: 20px 20px 30px 20px;
     margin-bottom: 30px;

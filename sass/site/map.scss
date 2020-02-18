@@ -1,5 +1,8 @@
 .map {
   height: 450px;
+  @media (min-width: $desktop) {
+    height: 500px;
+  }
   &__block {
     display: flex;
     //margin-top: 40px;

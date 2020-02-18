@@ -2,11 +2,9 @@
   display: flex;
 
     .icon {
-      color: $diz;
       svg {
         @include square-size(25px);
       }
-      transition: all $transition-time ease;
       cursor: pointer;
       outline: none;
       &:not(:last-child) {
@@ -15,11 +13,14 @@
           margin-right: 30px;
         }
       }
+      color: $diz;
+      transition: color $transition-time ease, opacity $transition-time ease;
       &:hover {
+        color: $primary;
       }
       &:active {
+        opacity: .3;
+        color: $primary;
       }
-    }
-    &--indent {
     }
 }

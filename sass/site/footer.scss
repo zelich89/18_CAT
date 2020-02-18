@@ -50,19 +50,35 @@
     align-items: center;
     text-transform: uppercase;
     width: 100%;
+    transition: opacity $transition-time ease;
     @media (min-width: $mobile) {
       width: auto;
     }
-
     .icon {
+      transition: color $transition-time ease, opacity $transition-time ease;
       svg {
         @include square-size(30px);
       }
+    }
+    &:hover {
+      .icon {
+        color: $primary
+      }
+    }
+    &:active {
+      opacity: .3;
     }
   }
   &-logo {
     display: flex;
     justify-content: center;
+    transition: opacity $transition-time ease;
+    &:hover {
+      opacity: .8;
+    }
+    &:active {
+      opacity: .6;
+    }
     &--indent {
       padding-bottom: 10px;
     }

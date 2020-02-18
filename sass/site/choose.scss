@@ -9,8 +9,6 @@
     padding: 20px;
     @media (min-width: $mobile) {
       padding: 70px 55px;
-    }
-    @media (min-width: $tablet) {
       display: flex;
       justify-content: space-between;
     }
@@ -146,6 +144,7 @@
     }
   }
   &--indent {
+    margin-bottom: 20px;
     @media (min-width: $mobile) {
       margin-bottom: 30px;
     }

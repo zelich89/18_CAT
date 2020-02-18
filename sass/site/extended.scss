@@ -1,0 +1,14 @@
+.border-mobile-top {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25px;
+    right: -25px;
+    border-top: 2px solid #e5e5e5;
+    @media (min-width: $mobile) {
+      border-top: none;
+      padding-top: 0;
+    }
+  }
+}

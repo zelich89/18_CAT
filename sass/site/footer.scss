@@ -10,7 +10,7 @@
     }
     @media (min-width: $desktop) {
     }
-    &--ident {
+    &--indent-Q {
       padding: 0 20px;
       @media (min-width: $mobile) {
         padding: 0 30px;
@@ -22,8 +22,8 @@
   }
   &__item {
     display: flex;
-    padding: 30px 0;
-    &:first-child {
+    //padding: 30px 0;
+/*    &:first-child {
       padding-top: 0;
     }
     &:last-child {
@@ -37,6 +37,10 @@
       border-top: none !important;
       border-bottom: none !important;
       padding: 0;
+    }*/
+    padding: 20px 0;
+    &:last-child {
+      padding-bottom: 0;
     }
 
   }
@@ -59,10 +63,13 @@
   &-logo {
     display: flex;
     justify-content: center;
+    &--indent {
+      padding-bottom: 10px;
+    }
   }
 
   &--padding {
-    padding: 35px 0;
+    padding: 20px;
   }
   &--bg-grey {
     background-color: $secondary;

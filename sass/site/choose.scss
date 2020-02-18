@@ -8,7 +8,7 @@
     background-color: $secondary;
     padding: 20px;
     @media (min-width: $mobile) {
-      padding: 80px 60px;
+      padding: 70px 55px;
     }
     @media (min-width: $tablet) {
       display: flex;
@@ -20,15 +20,11 @@
     }
     &--indent {
       margin-bottom: 20px;
-      &:not(:first-child) {
-        @media (min-width: $desktop) {
-          margin-left: 40px;
-        }
+      &:last-child {
+        margin-bottom: 0;
       }
-      &:not(:last-child) {
-        @media (min-width: $desktop) {
-          margin-right: 40px;
-        }
+      @media (min-width: $desktop) {
+        margin-bottom: 0;
       }
     }
   }
@@ -51,7 +47,8 @@
     border-radius: 50%;
     background-color: $primary;
     flex-shrink: 0;
-    &--small {
+
+    &--mobile {
       width: 50px;
       height: 50px;
       .svg {
@@ -59,15 +56,18 @@
         height: 50px;
       }
     }
-    &--invis-tab {
+
+    &--invis-on-tab {
       @media (min-width: $mobile) {
         display: none;
+        opacity: 0;
       }
       @media (min-width: $desktop) {
         display: block;
       }
     }
-    &--big {
+
+    &--tablet {
       width: 200px;
       height: 200px;
       .svg {
@@ -75,7 +75,8 @@
         height: 200px;
       }
     }
-    &--vis-in-tab {
+
+    &--vis-on-tab {
       display: none;
       @media (min-width: $mobile) {
         display: block;
@@ -84,16 +85,37 @@
         display: none;
       }
     }
+    &--desktop {
+      @media (min-width: $desktop) {
+        width: 100px;
+        height: 100px;
+        .svg {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
   }
+
   &__label {
     text-transform: uppercase;
     &--indent {
-      padding-left: 20px;
+      margin-left: 20px;
+      @media (min-width: $mobile) {
+        margin-left: 0;
+      }
+      @media (min-width: $desktop) {
+        margin-left: 60px;
+      }
     }
+
   }
   &__text {
     &--indent {
       padding-bottom: 20px;
+      @media (min-width: $mobile) {
+        padding-bottom: 55px;
+      }
     }
     &--border {
       border-bottom: 1px solid $diz;
@@ -107,6 +129,9 @@
     align-items: center;
     &--indent {
       margin-top: 20px;
+      @media (min-width: $mobile) {
+        margin-top: 0;
+      }
     }
   }
   &__link {
@@ -118,6 +143,19 @@
     .svg {
       width: 48px;
       height: 24px;
+    }
+  }
+  &--indent {
+    @media (min-width: $mobile) {
+      margin-bottom: 30px;
+    }
+    @media (min-width: $desktop) {
+      margin-bottom: 70px;
+    }
+  }
+  &--temp-desktop {
+    @media (min-width: $desktop) {
+      margin-top: 280px;
     }
   }
 }

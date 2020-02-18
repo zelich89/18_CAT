@@ -1,18 +1,29 @@
 .map {
-  height: 400px;
+  height: 450px;
   &__block {
     display: flex;
+    //margin-top: 40px;
+    &--indent {
+      margin-bottom: 25px;
+      @media (min-width: $mobile) {
+        padding: 0 60px;
+      }
+    }
   }
   &__title {
     width: 50%;
     text-transform: uppercase;
-    font-weight: bold;
+    //font-weight: bold;
+    //@include font(normal, 16px, 20px);
   }
   &__address {
     width: 50%;
+    @media (min-width: $mobile) {
+      text-align: end;
+    }
   }
   &__inner {
-    margin: 0 -30px;
+    margin: 0 -20px;
   }
 }
 

@@ -1,0 +1,13 @@
+.header {
+  &__warp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: $mobile) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @media (min-width: $desktop) {
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.logo {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  @media (min-width: $tablet) {
+    justify-content: normal;
+  }
+  &__mobile {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25px;
+    @media (min-width: $mobile) {
+      display: none;
+    }
+    &-text {
+      margin: 25px 0;
+      @media (min-width: $mobile) {
+        margin: 0;
+        display: none;
+      }
+    }
+  }
+  &__tablet {
+    display: none;
+    @media (min-width: $mobile) {
+      display: block;
+    }
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
+  &__desktop {
+    display: none;
+    @media (min-width: $desktop) {
+      display: inline-block;
+    }
+  }
+}

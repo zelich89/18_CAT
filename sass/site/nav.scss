@@ -1,0 +1,42 @@
+.nav {
+  text-align: center;
+  @media (min-width: $mobile) {
+    display: flex;
+  }
+  @media (min-width: $desktop) {
+    background-color: $primary;
+  }
+  &__item {
+    color: $black;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    @extend .h5;
+    display: block;
+    margin: 25px 0;
+    @media (min-width: $mobile) {
+      margin: 0 18px;
+      padding: 5px 0;
+      transition: opacity $transition-time ease, border $transition-time ease;
+      &:hover {
+        color: rgba($black,.6)
+      }
+      &:focus {
+        border-bottom: 2px solid $primary;
+      }
+      &:active {
+        color: rgba($black,.3);
+      }
+    }
+    @media (min-width: $desktop) {
+      color: $white;
+      &:focus {
+        border-bottom: 2px solid $white;
+      }
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,14 +1,21 @@
-.h2, h2 {
-  @include font(normal, 36px, 60px);
+h1 {
+  @include font(normal, 36px, 36px);
   @media (min-width: $mobile) {
-    @include font(normal, 60px, 90px);
+    @include font(normal, 60px, 60px);
+  }
+}
+
+.h2, h2 {
+  @include font(normal, 36px, 36px);
+  @media (min-width: $mobile) {
+    @include font(normal, 60px, 60px);
   }
 }
 
 .h3, h3 {
-  @include font(normal, 24px, 36px);
+  @include font(normal, 24px, 1);
   @media (min-width: $mobile) {
-    @include font(normal, 36px, 54px);
+    @include font(normal, 36px, 1);
   }
 }
 
@@ -23,7 +30,7 @@
 }
 
 .h5, h5 {
-  @include font(normal, 14px, 26px);
+  @include font(normal, 14px, 21px);
   @media (min-width: $mobile) {
     @include font(normal, 20px, 30px);
   }

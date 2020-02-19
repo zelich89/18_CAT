@@ -2,18 +2,18 @@
   position: relative;
   display: flex;
   width: 100%;
+
   justify-content: center;
   @media (min-width: $tablet) {
     justify-content: normal;
   }
-  @media (min-width: $desktop) {
-    justify-content: center;
-  }
+
   &__mobile {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 25px;
+    left: -10px;
+    //left: 25px;
     @media (min-width: $mobile) {
       display: none;
     }

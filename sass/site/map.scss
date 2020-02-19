@@ -2,11 +2,14 @@
   height: 400px;
   &__block {
     display: flex;
+    &--indent {
+      margin-bottom: 25px;
+    }
   }
   &__title {
     width: 50%;
     text-transform: uppercase;
-    font-weight: bold;
+    @include font(normal, 16px, 20px);
   }
   &__address {
     width: 50%;

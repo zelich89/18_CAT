@@ -1,8 +1,22 @@
 .how {
+  &__block {
+    &--indent {
+      margin-bottom: 42px;
+      @media(min-width: $mobile) {
+        margin-bottom: 0;
+      }
 
+      @media(min-width: $desktop) {
+
+      }
+    }
+  }
   &__title {
-    &--ident {
+    &--indent {
       padding-bottom: 40px;
+      @media(min-width: $mobile) {
+        padding-bottom: 75px;
+      }
     }
   }
   &__items {
@@ -15,17 +29,21 @@
     display: flex;
     align-items: center;
     position: relative;
+    border: 1px solid #000;
     @media(min-width: $mobile) {
       display: block;
       width: 50%;
+      height: 280px;
     }
     @media(min-width: $desktop) {
       width: 25%;
+      height: 250px;
     }
-    &--ident {
+    &--indent {
       margin-bottom: 20px;
       @media(min-width: $mobile) {
         padding-right: 125px;
+        margin-bottom: 36px;
       }
       @media(min-width: $desktop) {
         padding-right: 50px;
@@ -34,10 +52,13 @@
   }
   &__trafaret {
     @include square-size(60px);
+    @media(min-width: $mobile) {
+      @include square-size(80px);
+    }
     background-color: $primary;
     flex-shrink: 0;
     position: relative;
-    &--ident {
+    &--indent {
       @media(min-width: $mobile) {
         margin-bottom: 30px;
       }
@@ -60,7 +81,7 @@
   &__text {
     position: relative;
     z-index: 1;
-    &--ident {
+    &--indent {
       padding-left: 15px;
       @media(min-width: $mobile) {
         padding-left: 0;
@@ -79,13 +100,14 @@
       left: 0;
       pointer-events: none;
       color: $secondary;
-      @include font(normal, 180px, 1);
+      @include font(normal, 230px, 1);
       text-align: center;
       z-index: 0 ;
-      //margin-right: 90px;
     }
-    /*@media(min-width: $desktop) {
-      margin-right: 15px;
-    }*/
+  }
+  &--temp-margin {
+    @media(min-width: $mobile) {
+      margin-bottom: 135px;
+    }
   }
 }

@@ -10,4 +10,13 @@
       padding: 0 110px;
     }
   }
+  &--indent {
+    //padding-top: 10px;
+    @media (min-width: $mobile) {
+      padding-top: 25px;
+    }
+    @media (min-width: $desktop) {
+      padding-top: 55px;
+    }
+  }
 }

@@ -1,25 +1,29 @@
- @import "site/variables";
- @import "site/body";
- @import "site/content";
- @import "site/mixins";
-  @import "site/part";
-  @import "site/breakpoint";
-  @import "site/_types";
+@import "site/variables";
+@import "site/body";
+@import "site/content";
+@import "site/mixins";
+@import "site/part";
+@import "site/breakpoint";
+@import "site/_types";
 
-  @import "site/top-nav";
-  @import "site/main-sect";
+@import "site/header";
+@import "site/logo";
+@import "site/nav";
 
-  @import "site/choose";
-  @import "site/how";
-  @import "site/example";
-  @import "site/map";
+@import "site/top-nav";
+@import "site/main-sect";
 
-  @import "site/btn";
- @import "site/socia";
+@import "site/choose";
+@import "site/how";
+@import "site/example";
+@import "site/map";
+
+@import "site/btn";
+@import "site/socia";
 
 
 
-  @import "site/footer";
+@import "site/footer";
 
 // @import "site/nav-icons";
 

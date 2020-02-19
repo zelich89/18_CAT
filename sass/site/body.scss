@@ -5,6 +5,7 @@
 }
 
 body {
+  min-width: 260px;
   //font-family: 'Oswald', sans-serif;
   font: 14px/18px Aria, sans-serif;
   @media (min-width: $mobile) {

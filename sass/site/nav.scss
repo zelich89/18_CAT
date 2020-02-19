@@ -1,13 +1,10 @@
-.top-nav {
-
-  &__links {
-    text-align: center;
-    @media (min-width: $mobile) {
-      display: flex;
-    }
-    @media (min-width: $desktop) {
-      background-color: $primary;
-    }
+.nav {
+  text-align: center;
+  @media (min-width: $mobile) {
+    display: flex;
+  }
+  @media (min-width: $desktop) {
+    background-color: $primary;
   }
   &__item {
     color: $black;

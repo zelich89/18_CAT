@@ -1,0 +1,20 @@
+.maket {
+  position: relative;
+  &__pos {
+    position: absolute;
+    top: 0;
+    opacity: .3;
+    pointer-events: none;
+    &--mobile {
+      display: none;
+      @media (min-width: $mobile) {
+        @if $maket-visible == 1 {
+          display: block;
+        }
+      }
+      @media (min-width: $tablet) {
+        display: none;
+      }
+    }
+  }
+}

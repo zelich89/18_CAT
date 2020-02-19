@@ -10,4 +10,17 @@
     @media (min-width: $desktop) {
     }
   }
+  &__main-sect {
+    &--indent {
+      padding-bottom: 20px;
+      @media (min-width: $mobile) {
+        padding: 30px 0 0 80px;
+        //padding-bottom: 50px;
+        //padding-left: 90px;
+      }
+      @media (min-width: $desktop) {
+        padding-bottom: 30px;
+      }
+    }
+  }
 }

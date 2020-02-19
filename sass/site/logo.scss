@@ -6,6 +6,9 @@
   @media (min-width: $tablet) {
     justify-content: normal;
   }
+  @media (min-width: $desktop) {
+    justify-content: center;
+  }
   &__mobile {
     position: absolute;
     top: 50%;

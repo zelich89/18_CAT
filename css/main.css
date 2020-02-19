@@ -49,17 +49,28 @@ a {
   position: relative; }
   .maket__pos {
     position: absolute;
-    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     opacity: .3;
-    pointer-events: none; }
+    z-index: 11;
+    pointer-events: none;
+    display: none; }
     .maket__pos--mobile {
-      display: none; }
+      top: 13px;
+      display: block; }
       @media (min-width: 321px) {
         .maket__pos--mobile {
-          display: block; } }
-      @media (min-width: 768px) {
-        .maket__pos--mobile {
           display: none; } }
+    @media (min-width: 321px) {
+      .maket__pos--tablet {
+        display: block; } }
+    @media (min-width: 1440px) {
+      .maket__pos--tablet {
+        display: none; } }
+    @media (min-width: 1440px) {
+      .maket__pos--desktop {
+        display: block; } }
 
 .breakpoint {
   position: fixed;

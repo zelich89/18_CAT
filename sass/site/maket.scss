@@ -2,18 +2,36 @@
   position: relative;
   &__pos {
     position: absolute;
-    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     opacity: .3;
+    z-index: 11;
     pointer-events: none;
+    display: none;
     &--mobile {
-      display: none;
-      @media (min-width: $mobile) {
-        @if $maket-visible == 1 {
-          display: block;
+      top: 13px;
+      @if $maket-visible == 1 {
+        display: block;
+        @media (min-width: $mobile) {
+          display: none;
         }
       }
-      @media (min-width: $tablet) {
-        display: none;
+    }
+    &--tablet {
+      @if $maket-visible == 1 {
+        @media (min-width: $mobile) {
+          display: block;
+        }
+        @media (min-width: $desktop) {
+          display: none;
+        }
+      }
+    }
+    &--desktop {
+      @if $maket-visible == 1 {
+        @media (min-width: $desktop) {
+          display: block;
+        }
       }
     }
   }

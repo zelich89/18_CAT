@@ -172,7 +172,7 @@ h1 {
   @media (min-width: 1440px) {
     .header--indent {
       padding-top: 55px;
-      margin-bottom: 25px; } }
+      margin-bottom: 75px; } }
   @media (min-width: 1440px) {
     .header--bg-cat {
       background: url("/img/index-background-desktop.png") no-repeat right; } }

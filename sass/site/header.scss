@@ -37,9 +37,16 @@
   }
   &--indent {
     @media (min-width: $mobile) {
+      padding-top: 25px;
     }
     @media (min-width: $desktop) {
+      padding-top: 55px;
       margin-bottom: 25px;
+    }
+  }
+  &--bg-cat {
+    @media (min-width: $desktop) {
+      background: url('/img/index-background-desktop.png') no-repeat right;
     }
   }
 }

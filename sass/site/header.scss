@@ -1,0 +1,39 @@
+.header {
+
+  &__warp {
+    position: relative;
+    @extend .push;
+    @media (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &__logo {
+    position: absolute;
+  }
+  &__block {
+    @extend .push;
+    @media (min-width: $desktop) {
+      display: flex;
+    }
+    &--unpush {
+      margin: 0 -20px;
+      padding: 0 20px;
+    }
+  }
+  &__main-sect {
+    @media (min-width: $desktop) {
+      width: 50%;
+    }
+  }
+
+  &__cat {
+    @media (min-width: $desktop) {
+      width: 50%;
+      height: 696px;
+      flex-grow: 1 ;
+      background: url('/img/index-background-desktop.png') no-repeat;
+    }
+  }
+}

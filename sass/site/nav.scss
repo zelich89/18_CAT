@@ -1,0 +1,22 @@
+.nav {
+  //border: 1px solid navy;
+  text-align: center;
+
+  &__links {
+    @media (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    display: block;
+    text-transform: uppercase;
+    padding: 25px 0;
+    color: $black;
+    -webkit-tap-highlight-color: rgba(0, 0, 10, 0);
+    @media (min-width: $tablet) {
+      padding: 0 20px;
+    }
+  }
+}

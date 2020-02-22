@@ -1,0 +1,41 @@
+
+.logo {
+  //border: 1px solid crimson;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &__mobile {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    @media (min-width: $tablet) {
+      display: none;
+    }
+    &-text {
+      padding: 25px 0;
+      @media (min-width: $tablet) {
+        display: none;
+      }
+    }
+  }
+  &__tablet {
+    display: none;
+    @media (min-width: $tablet) {
+      display: inline-block;
+    }
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
+  &__desktop {
+    display: none;
+    @media (min-width: $tablet) {
+      display: none;
+    }
+    @media (min-width: $desktop) {
+      display: block;
+    }
+  }
+}

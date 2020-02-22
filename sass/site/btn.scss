@@ -1,0 +1,16 @@
+.btn {
+  text-align: center;
+  white-space: nowrap;
+  @extend .h5;
+  cursor: pointer;
+  padding: 10px 0;
+  @media (min-width: $mobile) {
+    width: 250px;
+    padding: 10px 30px;
+  }
+
+  &-primary {
+    background-color: $primary;
+    color: $white;
+  }
+}

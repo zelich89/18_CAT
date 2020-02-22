@@ -1,6 +1,6 @@
 h1 {
   @include font(normal, 36px, 36px);
-  @media (min-width: $mobile) {
+  @media (min-width: $tablet) {
     @include font(normal, 60px, 60px);
   }
 }
@@ -19,7 +19,7 @@ h1 {
   }
 }
 
-.h4, h4 {
+.h4, h4 {  // Меню
   @include font(500, 20px, 30px);
   @media (min-width: $tablet) {
     @include font(normal, 18px, 27px);

@@ -1,0 +1,3 @@
+@mixin font ($font-weight, $font-size, $line-height) {
+  font: $font-weight #{$font-size}/#{$line-height} 'Oswald', sans-serif;
+}

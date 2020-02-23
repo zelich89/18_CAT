@@ -20,7 +20,7 @@
     }
     &--bg-cat {
       height: 305px;
-      background: url('/img/index-background-mobile.png') no-repeat;
+      background: #63a73a url('/img/index-background-mobile.png') no-repeat center;
       @media (min-width: $tablet) {
         background: none;
         height: auto;
@@ -63,7 +63,7 @@
   &__picture {
     &--mobile {
       //margin: -145px auto 10px auto;
-      @media (min-width: $mobile) {
+      @media (min-width: $tablet) {
         display: none;
       }
     }
@@ -71,7 +71,7 @@
       margin-top: -75px;
       //margin: -75px 0 0 -75px;
       display: none;
-      @media (min-width: $mobile) {
+      @media (min-width: $tablet) {
         display: block;
         order: 1 ;
       }

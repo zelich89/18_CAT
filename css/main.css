@@ -4,6 +4,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+body {
+  min-width: 250px; }
+
 a {
   text-decoration: none; }
 
@@ -183,7 +186,7 @@ h1 {
               flex-direction: column; } }
   .main-sect__label--bg-cat {
     height: 305px;
-    background: url("/img/index-background-mobile.png") no-repeat; }
+    background: #63a73a url("/img/index-background-mobile.png") no-repeat center; }
     @media (min-width: 768px) {
       .main-sect__label--bg-cat {
         background: none;
@@ -217,14 +220,14 @@ h1 {
       .main-sect__description--indent {
         padding-bottom: 50px; } }
 
-@media (min-width: 322px) {
+@media (min-width: 768px) {
   .main-sect__picture--mobile {
     display: none; } }
 
 .main-sect__picture--tablet {
   margin-top: -75px;
   display: none; }
-  @media (min-width: 322px) {
+  @media (min-width: 768px) {
     .main-sect__picture--tablet {
       display: block;
       -webkit-box-ordinal-group: 2;

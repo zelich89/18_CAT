@@ -1,11 +1,23 @@
 .main-sect {
 
   &__block {
-
+    z-index: 1;
     &--indent {
       //padding-left: 20px;
       @media (min-width: $tablet) {
         padding-left: 90px;
+      }
+    }
+    @media (min-width: $desktop) {
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        left: 50%;
+        bottom: 0;
+        z-index: 0;
+        background: #63a73a url('/img/index-background-desktop.png') no-repeat;
       }
     }
   }
@@ -20,6 +32,7 @@
     }
     &--bg-cat {
       height: 305px;
+      position: relative;
       background: #63a73a url('/img/index-background-mobile.png') no-repeat center;
       @media (min-width: $tablet) {
         background: none;
@@ -84,9 +97,10 @@
       @media (min-width: $desktop) {
         display: block;          ///////////////////////////////////////////////////////////////////////////
         position: absolute;
+        z-index: 1 ;
         //top: -20%;
         left: 50%;
-        transform: translateX(-30%);
+        transform: translateX(17%);
       }
     }
 

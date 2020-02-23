@@ -2,11 +2,18 @@
 
   &__warp {
     position: relative;
+    z-index: 1;
     @extend .push;
     @media (min-width: $tablet) {
       display: flex;
       align-items: center;
       justify-content: space-between;
+    }
+    @media (min-width: $desktop) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
     }
   }
   &__logo {
@@ -29,11 +36,8 @@
   }
 
   &__cat {
-    @media (min-width: $desktop) {
-      width: 50%;
-      height: 696px;
-      flex-grow: 1 ;
-      background: url('/img/index-background-desktop.png') no-repeat;
-    }
+    position: relative;
+    width: 50%;
+    height: 300px;
   }
 }

@@ -7,19 +7,19 @@
     justify-content: normal;
   }
   @media (min-width: $desktop) {
-    justify-content: center;
+    //justify-content: center;
   }
   &__mobile {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 25px;
-    @media (min-width: $mobile) {
+    @media (min-width: $tablet) {
       display: none;
     }
     &-text {
       margin: 25px 0;
-      @media (min-width: $mobile) {
+      @media (min-width: $tablet) {
         margin: 0;
         display: none;
       }
@@ -27,7 +27,7 @@
   }
   &__tablet {
     display: none;
-    @media (min-width: $mobile) {
+    @media (min-width: $tablet) {
       display: block;
     }
     @media (min-width: $desktop) {

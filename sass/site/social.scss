@@ -5,13 +5,16 @@
       //@include square-size(48px);
       color: $diz;
       svg {
-        @include square-size(25px);
+        @include square-size(16px);
+        @media (min-width: $tablet) {
+          @include square-size(23px);
+        }
       }
       transition: all $transition-time ease;
       cursor: pointer;
       outline: none;
       &:not(:last-child) {
-        margin-right: 6px;
+        margin-right: 40px;
       }
       &:hover {
         //background-color: $primary-hover;

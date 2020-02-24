@@ -9,7 +9,6 @@
     pointer-events: none;
     display: none;
     &--mobile {
-      top: 13px;
       @if $maket-visible == 1 {
         display: block;
         @media (min-width: $mobile) {

@@ -3,35 +3,62 @@
   &__block {
     display: flex;
     flex-direction: column;
-    position: relative;
-    @media (min-width: $mobile) {
+    //position: relative;
+    @media (min-width: $tablet) {
     }
     @media (min-width: $desktop) {
+      height: 695px;
+      &:after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 50%;
+        z-index: 0;
+        background: #63a73a url('/img/index-background-desktop.png') no-repeat;
+      }
+    }
+    &--indent {
+      @media (min-width: $tablet) {
+
+      }
+      @media (min-width: $desktop) {
+        padding-top: 180px;
+        padding-left: 80px;
+      }
+
+
     }
   }
   &__label {
     text-align: center;
     color: $white;
-    background: url('/img/index-background-mobile.png') no-repeat;
+    background: #63a73a url('/img/index-background-mobile.png') no-repeat center;
     margin: 0 -20px;
-    padding: 20px;
+    padding-top: 30px;
     height: 310px;
-    @media (min-width: $mobile) {
+    @media (min-width: $tablet) {
       background: none;
       color: $black;
       text-align: start;
       height: auto;
+      margin: 0 -30px;
       padding-bottom: 40px;
     }
     @media (min-width: $desktop) {
     }
-
+    &--indent {
+      @media (min-width: $tablet) {
+        //padding-left: 80px;
+      }
+    }
   }
   &__title {
 
     &--indent {
       padding-bottom: 20px;
-      @media (min-width: $mobile) {
+      @media (min-width: $tablet) {
         padding-bottom: 40px;
       }
     }
@@ -40,7 +67,7 @@
     text-transform: uppercase;
     &--indent {
       padding-bottom: 45px;
-      @media (min-width: $mobile) {
+      @media (min-width: $tablet) {
         padding-bottom: 0;
       }
       @media (min-width: $desktop) {
@@ -51,14 +78,14 @@
   &__picture {
     &--mobile {
       margin: -145px auto 10px auto;
-      @media (min-width: $mobile) {
+      @media (min-width: $tablet) {
         display: none;
       }
     }
     &--tablet {
       margin: -75px 0 0 -75px;
       display: none;
-      @media (min-width: $mobile) {
+      @media (min-width: $tablet) {
         display: block;
         order: 1 ;
       }
@@ -69,7 +96,12 @@
     &--desktop {
       display: none;
       @media (min-width: $desktop) {
-        //display: block;          ///////////////////////////////////////////////////////////////////////////
+        display: block;          ///////////////////////////////////////////////////////////////////////////
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 5;
+        transform: translate(-40%, -40%);
       }
     }
   }

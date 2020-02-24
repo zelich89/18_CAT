@@ -1,15 +1,29 @@
 .map {
-  height: 400px;
+  height: 478px;
   &__block {
     display: flex;
+    &--indent {
+      padding: 25px 0;
+      @media (min-width: $tablet) {
+        padding: 65px 40px;
+      }
+    }
   }
   &__title {
     width: 50%;
     text-transform: uppercase;
-    font-weight: bold;
+    @include font(normal, 16px, 20px);
+    @media (min-width: $tablet) {
+      @include font(normal, 20px, 25px);
+    }
   }
   &__address {
     width: 50%;
+    @media (min-width: $tablet) {
+      text-align: end;
+      font: 16px/20px Aria, sans-serif;
+    }
+
   }
   &__inner {
     margin: 0 -30px;

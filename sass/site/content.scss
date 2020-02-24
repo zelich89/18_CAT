@@ -3,7 +3,7 @@
   margin: 0 auto;
   &__warp {
     padding: 0 20px;
-    @media (min-width: $mobile) {
+    @media (min-width: $tablet) {
       padding: 0 30px;
     }
     @media (min-width: $desktop) {

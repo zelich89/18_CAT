@@ -10,7 +10,7 @@
   }
   &__title {
     &--indent {
-      padding-bottom: 40px;
+      padding-bottom: 35px;
       @media(min-width: $tablet) {
         padding-bottom: 70px;
       }
@@ -19,27 +19,49 @@
   &__items {
     @media(min-width: $tablet) {
       display: flex;
-      flex-wrap: wrap-reverse;
+      flex-wrap: wrap;
     }
   }
   &__item {
+    border: 1px solid #000;
     display: flex;
     align-items: center;
     position: relative;
     @media(min-width: $tablet) {
       display: block;
       width: 50%;
+      height: 300px;
     }
     @media(min-width: $desktop) {
       width: 25%;
+      height: 255px;
+    }
+    @media(min-width: $tablet) {
+      &::before {
+        counter-increment: how-counter;
+        content: counter(how-counter);   /* Отображает текущее
+                                                 значение счетчика */
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        color: $secondary;
+        @include font(normal, 280px, 1);
+        text-align: center;
+        z-index: 0 ;
+        @media(min-width: $desktop) {
+          text-align: end;
+        }        
+      }
     }
     &--indent {
-      margin-bottom: 20px;
+      margin-bottom: 18px;
       @media(min-width: $tablet) {
-        padding-right: 125px;
+        //padding-right: 125px;
       }
       @media(min-width: $desktop) {
-        padding-right: 50px;
+        //padding-right: 50px;
       }
     }
   }
@@ -88,8 +110,8 @@
   &__count {
     display: none;
     @media(min-width: $tablet) {
-      display: block;
-      position: absolute;
+      //display: block;
+/*      position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
@@ -98,7 +120,7 @@
       color: $secondary;
       @include font(normal, 180px, 1);
       text-align: center;
-      z-index: 0 ;
+      z-index: 0 ;*/
       //margin-right: 90px;
     }
     /*@media(min-width: $desktop) {

@@ -5,7 +5,7 @@
     }
     &--indent {
       @media (min-width: $tablet) {
-        margin-bottom: 40px;
+        margin-bottom: 50px;
       }
       @media (min-width: $desktop) {
         padding-bottom: 20px;
@@ -60,6 +60,9 @@
     align-items: center;
     &--indent {
       padding-bottom: 20px;
+      @media (min-width: $tablet) {
+        padding-bottom: 30px;
+      }
       @media (min-width: $desktop) {
         padding-bottom: 45px;
       }
@@ -130,6 +133,13 @@
     }
   }
   &__text {
+/*    height: 111px;
+    @media (min-width: $tablet) {
+      height: 156px;
+    }
+    @media (min-width: $desktop) {
+      padding-bottom: 22px;
+    }*/
     &--indent {
       padding-bottom: 20px;
       @media (min-width: $tablet) {

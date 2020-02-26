@@ -40,11 +40,13 @@
         left: 0;
         border-top: 1px solid $diz;
         border-bottom: 1px solid $diz;
+        @media (min-width: $tablet) {
+          border-top: 0;
+          border-bottom: 0;
+        }
       }
     }
     @media (min-width: $tablet) {
-      border-top: none !important;
-      border-bottom: none !important;
       padding: 0;
     }
 

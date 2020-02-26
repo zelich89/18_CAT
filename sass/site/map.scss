@@ -1,11 +1,22 @@
 .map {
-  height: 478px;
+  //height: 478px;
+  position: relative;
   &__block {
     display: flex;
+    align-items: center;
+    @media (min-width: $desktop) {
+      position: absolute;
+      background-color: white;
+      left: 110px;
+      top: 100px;
+    }
     &--indent {
-      padding: 25px 0;
+      padding: 20px;
       @media (min-width: $tablet) {
-        padding: 65px 40px;
+        padding: 60px 40px;
+      }
+      @media (min-width: $desktop) {
+        padding: 65px 75px;
       }
     }
   }
@@ -26,7 +37,28 @@
 
   }
   &__inner {
-    margin: 0 -30px;
+    height: 360px;
+    @media (min-width: $tablet) {
+      height: 400px;
+    }
+    iframe {
+      display: block;
+    }
+    &--indent {
+      //margin: 0 -30px;
+    }
+  }
+  &--push {
+    margin-right: -20px;
+    margin-left: -20px;
+    @media (min-width: $tablet) {
+      margin-right: -30px;
+      margin-left: -30px;
+    }
+    @media (min-width: $desktop) {
+      margin-right: -110px;
+      margin-left: -110px;
+    }
   }
 }
 

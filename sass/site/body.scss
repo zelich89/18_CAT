@@ -6,6 +6,7 @@
 
 body {
   min-width: 260px;
+  counter-reset: how-counter; /* Инициируем счетчик для how */
   //font-family: 'Oswald', sans-serif;
   font: 14px/18px Aria, sans-serif;
   @media (min-width: $mobile) {

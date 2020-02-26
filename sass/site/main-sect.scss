@@ -7,28 +7,17 @@
     @media (min-width: $tablet) {
     }
     @media (min-width: $desktop) {
+      width: 50%;
       height: 695px;
-      &:after {
-        content: ' ';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 50%;
-        z-index: 0;
-        background: #63a73a url('/img/index-background-desktop.png') no-repeat;
-      }
     }
     &--indent {
       @media (min-width: $tablet) {
-
+        padding-top: 80px;
       }
       @media (min-width: $desktop) {
-        padding-top: 180px;
+        padding-top: 190px;
         padding-left: 80px;
       }
-
-
     }
   }
   &__label {
@@ -43,7 +32,7 @@
       color: $black;
       text-align: start;
       height: auto;
-      margin: 0 -30px;
+      margin: 0;
       padding-bottom: 40px;
     }
     @media (min-width: $desktop) {
@@ -59,7 +48,7 @@
     &--indent {
       padding-bottom: 20px;
       @media (min-width: $tablet) {
-        padding-bottom: 40px;
+        padding-bottom: 35px;
       }
     }
   }

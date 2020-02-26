@@ -14,7 +14,7 @@
     &--indent {
       padding-bottom: 35px;
       @media (min-width: $tablet) {
-        padding-top: 125px; ////////////////////////////////////////////////////////// BAD
+        //padding-top: 225px; ////////////////////////////////////////////////////////// BAD
         padding-bottom: 67px;
       }
       @media (min-width: $desktop) {
@@ -52,7 +52,7 @@
       justify-content: normal;
     }
     &--indent {
-      margin-bottom: 40px;
+      margin-bottom: 35px;
       @media (min-width: $tablet) {
         margin-bottom: 0;
       }
@@ -84,13 +84,13 @@
     position: absolute;
     padding: 0 15px;
     top: 100%;
-    transform: translateY(-50%);
+    transform: translateY(-30%);
     text-transform: none;
     background-color: $secondary;
     white-space: nowrap;
     @include font(normal, 12px, 1);
     @media (min-width: $tablet) {
-      background-color: $white;
+      //background-color: $white;
       @include font(normal, 14px, 1);
       padding: 0 10px;
     }
@@ -101,7 +101,7 @@
     @media (min-width: $tablet) {
       text-align: end;
     }
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
       text-align: start;
     }
     &--indent {
@@ -115,7 +115,7 @@
     pointer-events: none;
     position: relative;
     &--indent {
-      padding-bottom: 30px;
+      padding-bottom: 40px;
       @media (min-width: $tablet) {
         padding-bottom: 50px;
       }
@@ -130,9 +130,10 @@
     }
   }
   &--indent {
-    padding-top: 25px;
+    padding-top: 30px;
     padding-bottom: 20px;
     @media (min-width: $tablet) {
+      padding-top: 15px;
       padding-bottom: 50px;
       padding-left: 90px;
     }
@@ -145,12 +146,24 @@
     margin-left: -20px;
     padding-right: 20px;
     padding-left: 20px;
+    @media (min-width: $tablet) {
+      margin-right: -30px;
+      margin-left: -30px;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+    @media (min-width: $desktop) {
+      margin-right: -110px;
+      margin-left: -110px;
+      padding-right: 110px;
+      padding-left: 110px;
+    }
   }
 
   &--bg-grey {
     background-color: $secondary;
-    @media (min-width: $tablet) {
+/*    @media (min-width: $tablet) {
       background: rgba($secondary, .3);
-    }
+    }*/
   }
 }

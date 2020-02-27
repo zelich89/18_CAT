@@ -23,6 +23,7 @@
       //pointer-events: none;
     }
     &:after {
+      display: none;
       content: '';
       position: absolute;
       top: 25%;
@@ -37,17 +38,17 @@
       //transform: translateX(100%);
       @media (min-width: $tablet) {
         display: none;
-        cursor: pointer;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        border-radius: 50%;
-        border: 1px solid $dop-color;
+        //cursor: pointer;
+        //top: 50%;
+        //left: 50%;
+        //transform: translate(-50%,-50%);
+        //border-radius: 50%;
+        //border: 1px solid $dop-color;
         //background-color: red;
-        background-color: $white;
-        box-shadow: 0 1px 5px 0 rgba(50, 50, 50, .15);
-        @include square-size(35px);
-        transition: box-shadow $transition-time ease, border $transition-time ease;
+        //background-color: $white;
+        //box-shadow: 0 1px 5px 0 rgba(50, 50, 50, .15);
+        //@include square-size(35px);
+        //transition: box-shadow $transition-time ease, border $transition-time ease;
       }
     }
     &:hover:after {
@@ -74,8 +75,17 @@
     }
   }
   &__pointer {
+    position: absolute;
+    top: 25%;
+    right: 50%;
+    bottom: 25%;
+    left: 5%;
+    border-radius: 3px;
+    background-color: $primary;
+    transition: transform $transition-time easy;
+    transform: translateX(0);
+    //transform: translateX(100%);
     @media (min-width: $tablet) {
-      position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%,-50%);
@@ -111,13 +121,19 @@
     }
   }
   &__text {
-    border-bottom: 1px dotted rgba($black,.23);
+    @media (min-width: $tablet) {
+      border-bottom: 1px dotted rgba($black,.23);
+    }
     transition: border $transition-time ease;
     &:hover {
-      border-bottom: 1px solid rgba($black,.4);
+      @media (min-width: $tablet) {
+        border-bottom: 1px solid rgba($black,.4);
+      }
     }
     &:active {
-      border-bottom: 1px solid transparent;
+      @media (min-width: $tablet) {
+        border-bottom: 1px solid transparent;
+      }
     }
   }
 }

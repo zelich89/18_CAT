@@ -27,7 +27,7 @@
     &--indent {
       padding-bottom: 25px;
       @media (min-width: $tablet) {
-        padding-bottom: 55px;
+        padding-bottom: 50px;
       }
       @media (min-width: $desktop) {
         padding-bottom: 70px;
@@ -43,6 +43,7 @@
     }
     @media (min-width: $desktop) {
       display: block;
+      margin-bottom: 0;
     }
   }
   &__tabs {
@@ -138,6 +139,7 @@
       padding-left: 90px;
     }
     @media (min-width: $desktop) {
+      padding-top: 0;
       padding-bottom: 30px;
     }
   }

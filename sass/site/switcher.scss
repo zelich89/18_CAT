@@ -2,6 +2,8 @@
   display: flex;
   position: relative;
   justify-content: center;
+  align-items: center;
+  counter-reset: how-counter;
   &__text {
     align-items: center;
     text-transform: uppercase;
@@ -20,7 +22,6 @@
       height: 6px;
       border: none;
       background-color: $dop-color;
-      //pointer-events: none;
     }
     &:after {
       display: none;
@@ -38,17 +39,6 @@
       //transform: translateX(100%);
       @media (min-width: $tablet) {
         display: none;
-        //cursor: pointer;
-        //top: 50%;
-        //left: 50%;
-        //transform: translate(-50%,-50%);
-        //border-radius: 50%;
-        //border: 1px solid $dop-color;
-        //background-color: red;
-        //background-color: $white;
-        //box-shadow: 0 1px 5px 0 rgba(50, 50, 50, .15);
-        //@include square-size(35px);
-        //transition: box-shadow $transition-time ease, border $transition-time ease;
       }
     }
     &:hover:after {
@@ -57,21 +47,6 @@
     &:active:after {
       border: 2px solid $primary;
       box-shadow: 0 3px 5px 0 rgba(50, 50, 50, .35);
-    }
-    &:before {
-      @media (min-width: $tablet) {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        border-radius: 50%;
-        //background-color: red;
-        background-color: $primary;
-        @include square-size(8px);
-        z-index: 1;
-      }
-      pointer-events: none;
     }
   }
   &__pointer {
@@ -96,13 +71,27 @@
       background-color: $white;
       transition: box-shadow $transition-time ease, opacity $transition-time ease, border-color $transition-time ease;
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .15);
+      &:before {
+        @media (min-width: $tablet) {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          border-radius: 50%;
+          background-color: $primary;
+          @include square-size(8px);
+          z-index: 1;
+        }
+        pointer-events: none;
+      }
       &:after {
         content: '';
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+        top: -1px;
+        right: -1px;
+        bottom: -1px;
+        left: -1px;
         border-radius: 50%;
         border: 2px solid $primary;
         opacity: 0;

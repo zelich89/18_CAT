@@ -874,7 +874,7 @@ h1 {
         font: normal 20px/25px "Oswald", sans-serif; } }
     @media (min-width: 1440px) {
       .map__title {
-        width: 70%; } }
+        width: 70; } }
   .map__address {
     width: 50%; }
     @media (min-width: 768px) {

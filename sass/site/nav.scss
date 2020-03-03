@@ -29,20 +29,22 @@
         color: rgba($black,.3);
       }
     }
-    @media (min-width: $desktop) {
-      color: $white;
-      &:hover {
-        color: rgba($white,.6)
-      }
-      &:focus {
-        border-bottom: 2px solid $white;
-      }
-      &:active {
-        color: rgba($white,.3);
-      }
-    }
     &:first-child {
       //margin-top: 0;
+    }
+    &--main {
+      @media (min-width: $desktop) {
+        color: $white;
+        &:hover {
+          color: rgba($white,.6)
+        }
+        &:focus {
+          border-bottom: 2px solid $white;
+        }
+        &:active {
+          color: rgba($white,.3);
+        }
+      }
     }
   }
 }

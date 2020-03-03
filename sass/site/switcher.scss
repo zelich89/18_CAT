@@ -23,7 +23,7 @@
       border: none;
       background-color: $dop-color;
     }
-    &:after {
+/*    &:after {
       display: none;
       content: '';
       position: absolute;
@@ -47,7 +47,7 @@
     &:active:after {
       border: 2px solid $primary;
       box-shadow: 0 3px 5px 0 rgba(50, 50, 50, .35);
-    }
+    }*/
   }
   &__pointer {
     position: absolute;

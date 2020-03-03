@@ -1,0 +1,9 @@
+.additional{
+
+  &__title {
+    @include font(normal, 24px, 24px);
+    @media (min-width: $tablet ) {
+      @include font(normal, 36px, 36px);
+    }
+  }
+}

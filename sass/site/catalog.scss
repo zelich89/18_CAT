@@ -1,0 +1,61 @@
+.catalog {
+
+  &__title {
+    &--indent {
+
+      padding-bottom: 35px;
+      @media (min-width: $tablet) {
+        //padding-top: 225px; ////////////////////////////////////////////////////////// BAD
+        //padding-bottom: 135px;
+        padding-bottom: 0;
+      }
+      @media (min-width: $desktop) {
+        //padding-top: 40px;
+      }
+    }
+  }
+
+  &__items {
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &--push {
+      @media (min-width: $tablet) {
+        margin: 0 -30px;
+      }
+      @media (min-width: $desktop) {
+        margin: 0 -40px;
+      }
+    }
+    &--indent {
+      @media (min-width: $tablet) {
+        padding-bottom: 70px;
+      }
+      @media (min-width: $desktop) {
+        padding-bottom: 80px;
+      }
+    }
+  }
+  &__item {
+    //border: 1px solid rgba($diz, .15);
+    width: 100%;
+    @media (min-width: $tablet) {
+      width: 50%;
+    }
+    @media (min-width: $desktop) {
+      width: 25%;
+    }
+    &--indent {
+      @media (min-width: $tablet) {
+        padding: 0 30px;
+      }
+      @media (min-width: $desktop) {
+        padding: 0 40px;
+      }
+    }
+  }
+  &--indent {
+
+  }
+}

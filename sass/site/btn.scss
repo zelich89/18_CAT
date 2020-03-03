@@ -1,3 +1,4 @@
+/*
 .btn {
   text-align: center;
   @extend .h5;
@@ -19,6 +20,41 @@
     &:active {
       background-color: $primary-press;
       color: rgba($white, .3);
+    }
+  }
+}*/
+.btn {
+  text-align: center;
+  display: block;
+  @extend .h5;
+  cursor: pointer;
+  padding: 10px 0;
+  @media (min-width: $tablet) {
+    z-index: 1;
+  }
+
+  &-primary {
+    background-color: $primary;
+    color: $white;
+    transition: background $transition-time ease;
+    &:hover {
+      background-color: $primary-press;
+    }
+    &:active {
+      background-color: $primary-press;
+      color: rgba($white, .3);
+    }
+  }
+  &-secondary {
+    background-color: $secondary;
+    color: rgba($black, .8);
+    transition: background $transition-time ease;
+    &:hover {
+      background-color: $tertiary;
+    }
+    &:active {
+      background-color: $tertiary;
+      color: rgba($black, .25);
     }
   }
 }

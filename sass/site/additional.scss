@@ -156,5 +156,15 @@
     .svg {
       @include square-size(60px);
     }
+    &--indent {
+      padding-top: 65px;
+      padding-bottom: 50px;
+      @media (min-width: $tablet ) {
+        padding-top: 0;
+      }
+    }
+  }
+  &__text {
+    @include font(normal, 16px, 20px);
   }
 }

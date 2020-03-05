@@ -18,15 +18,16 @@
     @media (min-width: $tablet) {
       margin: 0 18px;
       padding: 5px 0;
+      border-bottom: 2px solid $white;
       transition: opacity $transition-time ease, border $transition-time ease;
       &:hover {
         color: rgba($black,.6)
       }
       &:focus {
-        border-bottom: 2px solid $primary;
+        color: rgba($black,.3);
       }
       &:active {
-        color: rgba($black,.3);
+        border-color: $primary;
       }
     }
     &:first-child {

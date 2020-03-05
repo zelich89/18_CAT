@@ -7,7 +7,7 @@
       @media (min-width: $tablet) {
         //padding-top: 225px; ////////////////////////////////////////////////////////// BAD
         //padding-bottom: 135px;
-        padding-bottom: 0;
+        padding-bottom: 30px;
       }
       @media (min-width: $desktop) {
         //padding-top: 40px;
@@ -19,14 +19,6 @@
     @media (min-width: $tablet) {
       display: flex;
       flex-wrap: wrap;
-    }
-    &--push {
-      @media (min-width: $tablet) {
-        margin: 0 -30px;
-      }
-      @media (min-width: $desktop) {
-        margin: 0 -40px;
-      }
     }
     &--indent {
       @media (min-width: $tablet) {
@@ -56,6 +48,6 @@
     }
   }
   &--indent {
-
+    padding-bottom: 20px;
   }
 }

@@ -38,7 +38,13 @@
       }
     }
     &--catalog-indent {
-      padding-bottom: 20px;
+      padding-bottom: 30px;
+      @media (min-width: $tablet) {
+        padding-bottom: 55px;
+      }
+      @media (min-width: $desktop) {
+        padding-bottom: 75px;
+      }
     }
   }
   &__bg-cat {

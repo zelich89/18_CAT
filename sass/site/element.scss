@@ -7,6 +7,10 @@
       flex-direction: column;
       position: relative;
     }
+    &--all {
+      flex-direction: column;
+      text-align: center;
+    }
   }
   &__picture {
     &--relative {
@@ -24,15 +28,39 @@
         transform: translate(-50%,-110%);
       }
     }
+    &--mob-all {
+      padding-top: 35px;
+      @media (min-width: $tablet ) {
+        display: none;
+      }
+    }
+    &--big-all {
+      display: none;
+      @media (min-width: $tablet ) {
+        display: block;
+      }
+    }
   }
   &__title {
     text-transform: uppercase;
     @include font(normal, 16px, 20px);
     @media (min-width: $tablet ) {
       text-align: center;
+      @include font(normal, 20px, 20px);
     }
     &--indent {
+      padding-top: 23px;
       padding-bottom: 15px;
+      @media (min-width: $tablet ) {
+        padding-bottom: 16px;
+      }
+    }
+    &--all-indent {
+      padding-top: 23px;
+      padding-bottom: 5px;
+      @media (min-width: $tablet ) {
+        padding-bottom: 30px;
+      }
     }
   }
   &__description {
@@ -47,15 +75,26 @@
   &__line {
     display: flex;
     justify-content: space-between;
-    line-height: 1.5;
+    line-height: 1.2;
+    &--all {
+      @media (min-width: $tablet ) {
+        height: 84px;
+      }
+    }
     &--indent {
       @media (min-width: $tablet ) {
-        padding: 5px 0;
+        padding: 6px 0;
+      }
+    }
+    &--all-indent {
+      @media (min-width: $tablet ) {
+        padding-top: 27px;
+
       }
     }
     &--border {
       @media (min-width: $tablet ) {
-      border-bottom: 1px solid rgba($diz, .5);
+        border-bottom: 1px solid rgba($diz, .5);
       }
     }
   }
@@ -73,11 +112,33 @@
       background: $secondary;
     }
   }
+  &--border {
+    border-top: 1px solid rgba($diz, .5);
+    border-right: 1px solid rgba($diz, .5);
+    border-left: 1px solid rgba($diz, .5);
+  }
+  &--border-down {
+      border-bottom: 1px solid rgba($diz, .5);
+  }
   &--indent {
-    padding: 20px 0;
+    padding: 8px 20px;
+    //border: 1px solid red;
+    margin: 0 -20px;
     @media (min-width: $tablet ) {
-      margin-top: 150px;
+      margin-top: 155px;
       padding: 120px 40px 40px 40px;
+    }
+  }
+  &--all-push {
+    margin: 0 -20px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  &--all-indent {
+    padding-bottom: 30px;
+    @media (min-width: $tablet ) {
+      margin-top: 155px;
+      padding: 50px 40px 40px 40px;
     }
   }
 }

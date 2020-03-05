@@ -1,4 +1,11 @@
 .zel {
+  height: 370px;
+  @media (min-width: $tablet ) {
+    height: 340px;
+  }
+  @media (min-width: $desktop ) {
+    padding: 0;
+  }
   &-400 {
     height: 400px;
   }

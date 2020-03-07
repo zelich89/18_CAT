@@ -5,9 +5,7 @@
 
       padding-bottom: 35px;
       @media (min-width: $tablet) {
-        //padding-top: 225px; ////////////////////////////////////////////////////////// BAD
-        //padding-bottom: 135px;
-        padding-bottom: 30px;
+        padding-bottom: 10px;
       }
       @media (min-width: $desktop) {
         //padding-top: 40px;
@@ -20,14 +18,14 @@
       display: flex;
       flex-wrap: wrap;
     }
-    &--indent {
+/*    &--indent {
       @media (min-width: $tablet) {
         padding-bottom: 70px;
       }
       @media (min-width: $desktop) {
         padding-bottom: 80px;
       }
-    }
+    }*/
   }
   &__item {
     //border: 1px solid rgba($diz, .15);
@@ -48,6 +46,12 @@
     }
   }
   &--indent {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+    @media (min-width: $tablet) {
+      padding-bottom: 65px;
+    }
+    @media (min-width: $desktop) {
+      padding-bottom: 80px;
+    }
   }
 }

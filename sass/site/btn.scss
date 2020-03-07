@@ -25,14 +25,10 @@
 }*/
 .btn {
   text-align: center;
-  display: block;
+  display: inline-block;
   @extend .h5;
   cursor: pointer;
-  padding: 10px 0;
-  @media (min-width: $tablet) {
-    z-index: 1;
-  }
-
+  padding: 10px 15px;
   &-primary {
     background-color: $primary;
     color: $white;

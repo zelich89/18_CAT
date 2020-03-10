@@ -1,0 +1,52 @@
+.cat-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  @include font(normal, 16px, 18px);
+  @media (min-width: $tablet ) {
+    @include font(normal, 20px, 20px);
+  }
+  &__input {
+    height: 45px;
+    padding: 15px;
+    text-transform: uppercase;
+    flex-grow: 1;
+    margin-left: 15px;
+    border: 1px solid rgba($diz, .5);
+    transition: border-color $transition-time ease;
+    @include font(normal, 16px, 18px);
+    @media (min-width: $tablet ) {
+      height: 52px;
+      margin-left: 16px;
+      padding: 15px 20px;
+      @include font(normal, 20px, 20px);
+    }
+    @media (min-width: $desktop ) {
+      margin-left: 19px;
+    }
+
+    &:invalid {
+      border: 2px solid $input-error;
+    }
+
+  }
+  &__icon-set {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    @media (min-width: $tablet ) {;
+      transform: translate(-100%, -50%);
+    }
+    .svg {
+      @include square-size(20px);
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.cat-checkbox {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  &__checked {
+    @include square-size(30px);
+    //@extend .sedona-buttons;
+    //
+    //
+    border: 1px solid rgba($input-color, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background $transition-time ease, color $transition-time ease;
+    flex-shrink: 0;
+    //
+    //
+    @media (min-width: $tablet) {
+      @include square-size(40px);
+    }
+    .svg {
+      @include square-size(40px);
+      color: $primary;
+      transform: scale(0);
+      transition: transform $transition-time ease;
+    }
+  }
+  &__input:checked ~ .cat-checkbox__checked {
+    .svg {
+      transform: scale(1);
+    }
+  }
+  &__text {
+    //@extend .text-truncate;
+    text-transform: uppercase;
+    &--truncate {
+      //width: 125px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    &--ml13 {
+      margin-left: 13px;
+    }
+  }
+
+}

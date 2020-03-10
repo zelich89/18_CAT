@@ -4,9 +4,10 @@
   &__block {
     display: flex;
     align-items: center;
+    background-color: $secondary;
     @media (min-width: $desktop) {
       position: absolute;
-      background-color: white;
+      background-color: $white;
       left: 110px;
       top: 100px;
       width: 570px;
@@ -14,10 +15,10 @@
     &--indent {
       padding: 20px;
       @media (min-width: $tablet) {
-        padding: 60px 40px;
+        padding: 60px;
       }
       @media (min-width: $desktop) {
-        padding: 65px 75px;
+        padding: 55px 75px;
       }
     }
   }
@@ -29,7 +30,6 @@
       @include font(normal, 20px, 25px);
     }
     @media (min-width: $desktop) {
-      width: 70;
     }
   }
   &__address {
@@ -40,6 +40,9 @@
     }
     @media (min-width: $desktop) {
       text-align: start;
+    }
+    &--indent {
+      margin-left: 80px;
     }
 
   }

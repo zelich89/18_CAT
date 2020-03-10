@@ -1,0 +1,53 @@
+.cat-radiobox {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  &__radioed {
+    @include square-size(30px);
+    //
+    border: 1px solid rgba($input-color, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border-color $transition-time ease, color $transition-time ease;
+    flex-shrink: 0;
+    //
+    border-radius: 50%;
+    @media (min-width: $tablet) {
+      @include square-size(40px);
+    }
+    &:after {
+      content: "";
+      background: $primary;
+      width: 42%;
+      height: 42%;
+      border-radius: 50%;
+      transform: scale(0);
+      transition: all $transition-time ease;
+    }
+    &:hover {
+      border-color: $input-color;
+    }
+  }
+  &__input:checked ~ .cat-radiobox__radioed {
+    &:after {
+      transform: scale(1);
+    }
+  }
+  &__text {
+    text-transform: uppercase;
+    &--margin-left {
+      margin-left: 16px;
+      @media (min-width: $desktop) {
+        margin-left: 20px;
+      }
+    }
+  }
+  &--indent {
+    margin-bottom: 13px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

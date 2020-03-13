@@ -35,7 +35,6 @@
     position: absolute;
     top: 50%;
     right: 0;
-    @include square-size(20px)
     transform: translate(-50%, -50%);
     @media (min-width: $tablet ) {
       transform: translate(-100%, -50%);

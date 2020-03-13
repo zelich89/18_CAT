@@ -3,7 +3,6 @@
   &__block {
     display: flex;
     flex-direction: column;
-    //position: relative;
     @media (min-width: $tablet) {
     }
     @media (min-width: $desktop) {
@@ -39,7 +38,6 @@
     }
     &--indent {
       @media (min-width: $tablet) {
-        //padding-left: 80px;
       }
     }
   }

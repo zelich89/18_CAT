@@ -2,7 +2,6 @@
   &__warp {
     @media (min-width: $tablet ) {
       padding: 0;
-      //padding: 0 40px;
     }
     @media (min-width: $desktop ) {
       padding: 0;
@@ -70,7 +69,6 @@
   }
   &__item {
     @media (min-width: $desktop) {
-      //width: 100%;
       display: flex;
       align-items: center;
     }
@@ -177,7 +175,6 @@
     @include font(normal, 16px, 20px);
     @media (min-width: $tablet ) {
       width: 100%;
-      //@include font(normal, 20px, 20px);
     }
     @media (min-width: $desktop ) {
       width: auto;

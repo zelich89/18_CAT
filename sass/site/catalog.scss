@@ -8,7 +8,6 @@
         padding-bottom: 10px;
       }
       @media (min-width: $desktop) {
-        //padding-top: 40px;
       }
     }
   }
@@ -18,17 +17,8 @@
       display: flex;
       flex-wrap: wrap;
     }
-/*    &--indent {
-      @media (min-width: $tablet) {
-        padding-bottom: 70px;
-      }
-      @media (min-width: $desktop) {
-        padding-bottom: 80px;
-      }
-    }*/
   }
   &__item {
-    //border: 1px solid rgba($diz, .15);
     width: 100%;
     @media (min-width: $tablet) {
       width: 50%;

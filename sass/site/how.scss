@@ -27,7 +27,6 @@
     align-items: center;
     position: relative;
     @media(min-width: $tablet) {
-      //border: 1px solid #000;
       display: block;
       width: 50%;
       height: 300px;
@@ -57,12 +56,6 @@
     }
     &--indent {
       margin-bottom: 18px;
-      @media(min-width: $tablet) {
-        //padding-right: 125px;
-      }
-      @media(min-width: $desktop) {
-        //padding-right: 50px;
-      }
     }
   }
   &__trafaret {

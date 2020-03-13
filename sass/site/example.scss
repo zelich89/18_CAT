@@ -14,7 +14,6 @@
     &--indent {
       padding-bottom: 35px;
       @media (min-width: $tablet) {
-        //padding-top: 225px; ////////////////////////////////////////////////////////// BAD
         padding-bottom: 67px;
       }
       @media (min-width: $desktop) {
@@ -91,7 +90,6 @@
     white-space: nowrap;
     @include font(normal, 12px, 1);
     @media (min-width: $tablet) {
-      //background-color: $white;
       @include font(normal, 14px, 1);
       padding: 0 10px;
     }
@@ -164,8 +162,5 @@
 
   &--bg-grey {
     background-color: $secondary;
-/*    @media (min-width: $tablet) {
-      background: rgba($secondary, .3);
-    }*/
   }
 }

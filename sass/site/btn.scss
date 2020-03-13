@@ -1,28 +1,4 @@
-/*
-.btn {
-  text-align: center;
-  @extend .h5;
-  cursor: pointer;
-  padding: 10px 0;
-  @media (min-width: $tablet) {
-    width: 250px;
-    padding: 10px 30px;
-    z-index: 1;
-  }
 
-  &-primary {
-    background-color: $primary;
-    color: $white;
-    transition: background $transition-time ease;
-    &:hover {
-      background-color: $primary-press;
-    }
-    &:active {
-      background-color: $primary-press;
-      color: rgba($white, .3);
-    }
-  }
-}*/
 .btn {
   text-align: center;
   display: inline-block;

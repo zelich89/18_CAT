@@ -34,10 +34,10 @@
   &__icon-set {
     position: absolute;
     top: 50%;
-    right: 0;
-    transform: translate(-50%, -50%);
+    right: 10px;
+    transform: translateY(-50%);
     @media (min-width: $tablet ) {
-      transform: translate(-100%, -50%);
+      right: 20px;
     }
     .svg {
       @include square-size(20px);

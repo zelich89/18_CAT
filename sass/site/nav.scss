@@ -29,6 +29,7 @@
     &--main {
       @media (min-width: $desktop) {
         color: $white;
+        border-color: transparent;
         &:hover {
           color: rgba($white,.6)
         }

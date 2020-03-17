@@ -136,6 +136,7 @@
     }
     &--amind {
       @media (min-width: $desktop) {
+        width: 50%;
         &:first-child {
           margin-right: 20px;
         }
@@ -210,10 +211,10 @@
     &--indent {
       margin: 35px 0 30px 0;
       @media (min-width: $tablet) {
-        margin: 55px 0 20px 0;
+        margin: 35px 0 25px 0;
       }
       @media (min-width: $desktop) {
-        margin: 60px 0;
+        margin: 45px 0;
       }
     }
   }

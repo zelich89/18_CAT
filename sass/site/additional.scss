@@ -162,6 +162,9 @@
     @media (min-width: $tablet ) {
       @include font(normal, 20px, 20px);
     }
+    @media (min-width: $desktop ) {
+      width: 55%;
+    }
     &--indent {
       padding-bottom: 10px;
       @media (min-width: $tablet ) {
@@ -172,8 +175,8 @@
   &__params {
     display: flex;
     justify-content: space-between;
-    @media (min-width: $tablet ) {
-
+    @media (min-width: $desktop ) {
+      flex-grow: 1;
     }
     &--indent {
       padding-bottom: 13px;
@@ -187,6 +190,9 @@
     &--indent {
       @media (min-width: $tablet ) {
         padding-right: 60px;
+      }
+      @media (min-width: $desktop ) {
+        padding-right: 55px;
       }
     }
   }

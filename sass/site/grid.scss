@@ -1,0 +1,18 @@
+.grid {
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__col-3 {
+    width: 25%;
+  }
+
+  &__col-4 {
+    width: 33.3333%;
+  }
+
+  &__col-9 {
+    width: 75%;
+  }
+}
+

@@ -2,6 +2,7 @@
   max-width: $content-width;
   margin: 0 auto;
   &__warp {
+    overflow-x: hidden;
     padding: 0 20px;
     @media (min-width: $tablet) {
       padding: 0 30px;

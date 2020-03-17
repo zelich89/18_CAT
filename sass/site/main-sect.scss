@@ -32,7 +32,7 @@
       text-align: start;
       height: auto;
       margin: 0;
-      padding-bottom: 40px;
+      padding-bottom: 45px;
     }
     @media (min-width: $desktop) {
     }
@@ -97,5 +97,9 @@
     white-space: nowrap;
     position: relative;
     z-index: 1;
+    @media (min-width: $tablet) {
+      align-self: flex-start;
+      padding: 12px 25px;
+    }
   }
 }

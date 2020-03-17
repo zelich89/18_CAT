@@ -1,6 +1,8 @@
 .nav {
+  width: 100%;
   text-align: center;
   @media (min-width: $tablet) {
+    width: auto;
     display: flex;
   }
   &__item {
@@ -24,6 +26,14 @@
       }
       &.active {
         border-color: $primary;
+      }
+    }
+    &--border {
+      border-right: 1px solid rgba($diz, .5);
+      border-bottom: 1px solid rgba($diz, .5);
+      border-left: 1px solid rgba($diz, .5);
+      @media (min-width: $tablet) {
+        border: none;
       }
     }
     &--main {

@@ -4,16 +4,13 @@
     .icon {
       color: $diz;
       svg {
-        @include square-size(16px);
-        @media (min-width: $tablet) {
-          @include square-size(23px);
-        }
+        @include square-size(24px);
       }
       transition: all $transition-time ease;
       cursor: pointer;
       outline: none;
       &:not(:last-child) {
-        margin-right: 40px;
+        margin-right: 45px;
       }
       &:hover {
       }
